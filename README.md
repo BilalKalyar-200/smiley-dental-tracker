@@ -86,7 +86,7 @@ Make sure you have these installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smiley-dental-tracker.git
+git clone https://github.com/BilalKalyar-200/smiley-dental-tracker.git
 cd smiley-dental-tracker
 ```
 
@@ -262,7 +262,8 @@ Open your browser at: **http://localhost:5173**
 
 ## 👨‍💻 Developer
 
-**Bilal Mohsin, Muhammad Tahir, Ali Meekal**
+**Bilal Mohsin, Muhammad Tahir and Ali Meekal**
+
 BS Computer Sceince Students — Semester Project 2026
 
 ---
