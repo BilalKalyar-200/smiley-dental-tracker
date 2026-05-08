@@ -27,7 +27,15 @@ const userSchema = new mongoose.Schema(
     },
     //patient fields
     dateOfBirth: { type: Date },
-    gender: { type: String, enum: ["male", "female", "other"] },
+    gender: {
+      type: String,
+      enum: {
+        values: ["male", "female", "other"],
+        message: "Invalid gender",
+      },
+      required: false,
+      default: undefined,
+    },
     phoneNumber: { type: String },
     //Dentist fields
     licenseNumber: { type: String },

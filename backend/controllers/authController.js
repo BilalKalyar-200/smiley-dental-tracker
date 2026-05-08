@@ -37,7 +37,7 @@ const register = async (req, res, next) => {
       password,
       role: role || "patient",
       dateOfBirth,
-      gender,
+      gender: gender || undefined, 
       phoneNumber,
       licenseNumber,
       specialization,

@@ -70,6 +70,12 @@ const Navbar = () => {
                 >
                   Habits
                 </Link>
+                <Link
+                  to="/patient/diagnosis"
+                  className="text-gray-300 hover:text-blue-400 text-sm transition-colors"
+                >
+                  Diagnoses
+                </Link>
                 <span className="text-blue-400 text-sm font-medium">
                   Hi, {user.fullName?.split(" ")[0]}
                 </span>

@@ -17,6 +17,7 @@ import HabitLog from "../pages/patient/HabitLog";
 import ReportSymptom from "../pages/patient/ReportSymptom";
 import DentistDashboard from "../pages/dentist/DentistDashboard";
 import PatientDetails from "../pages/dentist/PatientDetails";
+import MyDiagnosis from "../pages/patient/MyDiagnosis";
 
 const AppRoutes = () => {
   const { user } = useAuth();
@@ -120,6 +121,14 @@ const AppRoutes = () => {
 
       {/* Fallback */}
       <Route path="*" element={<Navigate to="/" />} />
+      <Route
+        path="/patient/diagnosis"
+        element={
+          <ProtectedRoute role="patient">
+            <MyDiagnosis />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 };

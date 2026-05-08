@@ -67,5 +67,23 @@ const addDiagnosisNote = async (req, res, next) => {
     next(error);
   }
 };
+// @desc    Get diagnosis notes for logged-in patient
+// @route   GET /api/patient/diagnosis
+// @access  Patient only
+const getMyDiagnosis = async (req, res, next) => {
+  try {
+    const notes = await DiagnosisNote.find({ patient: req.user._id })
+      .populate("dentist", "fullName specialization")
+      .sort({ createdAt: -1 });
+    res.json({ success: true, notes });
+  } catch (error) {
+    next(error);
+  }
+};
 
-module.exports = { getAllPatients, getPatientDetails, addDiagnosisNote };
+module.exports = {
+  getAllPatients,
+  getPatientDetails,
+  addDiagnosisNote,
+  getMyDiagnosis,
+};

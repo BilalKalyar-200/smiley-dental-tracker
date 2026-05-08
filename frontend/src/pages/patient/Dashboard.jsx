@@ -62,6 +62,12 @@ const PatientDashboard = () => {
       desc: "Book or view appointments",
     },
     {
+      to: "/patient/diagnosis",
+      icon: "🩺",
+      label: "My Diagnoses",
+      desc: "View notes from your dentist",
+    },
+    {
       to: "/patient/habits",
       icon: "🪥",
       label: "Habit Tracker",

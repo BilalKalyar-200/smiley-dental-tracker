@@ -31,6 +31,7 @@ app.use("/api/symptoms", require("./routes/symptomRoutes"));
 app.use("/api/appointments", require("./routes/appointmentRoutes"));
 app.use("/api/habits", require("./routes/habitRoutes"));
 app.use("/api/dentist", require("./routes/dentistRoutes"));
+app.use("/api/patient", require("./routes/patientRoutes"));
 
 //health check route
 app.get("/", (req, res) => {
