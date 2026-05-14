@@ -260,11 +260,11 @@ Open your browser at: **http://localhost:5173**
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developers
 
 **Bilal Mohsin, Muhammad Tahir and Ali Meekal**
 
-BS Computer Sceince Students — Semester Project 2026
+BS Computer Science Students — Semester Project 2026
 
 ---
 
